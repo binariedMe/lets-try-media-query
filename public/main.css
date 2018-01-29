@@ -1,0 +1,144 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+#mainHeader{
+    padding: 12px 24px;
+    background: #003d4c;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+#mainWrapper{
+    display: block;
+    margin-bottom: 10px;
+}
+#leftSection{
+    width: 20%;
+    float: left;
+    background: rgba(102,102,102,0.1);
+    height: Calc(100vh - 45px);
+}
+.heading{
+    font-size: 16px;
+    padding: 12px 12px;
+    text-align: center;
+    border-bottom: 1px solid rgba(102,102,102,0.2);
+}
+ul{
+    padding: 0px 10px;
+}
+ul li{
+    list-style-type: none;
+    padding: 6px 12px;
+}
+#leftSection ul li:hover{
+    background: rgba(102,102,102,0.2);
+    border-radius: 2px;
+    cursor: pointer;
+}
+#rightSection{
+    width: 20%;
+    float: right;
+    background: rgba(102,102,102,0.1);
+    height: Calc(100vh - 45px);
+}
+#userOnlineWrapper li{
+    padding: 6px 12px;
+    height: 40px;
+}
+#userOnlineWrapper li .imgWrapper{
+    float: left;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: relative;
+}
+#userOnlineWrapper li .imgWrapper img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+#userOnlineWrapper li .imgWrapper .green{
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background: green;
+    position: absolute;
+    z-index: 5;
+    left: 2px;
+    top: 2px;
+}
+#userOnlineWrapper li .imgName{
+    line-height: 40px;
+    font-size: 16px;
+    padding-left: 46px;
+    text-transform: capitalize;
+}
+#centerContent{
+    float: left;
+    width: 60%;
+    height: Calc(100vh - 45px);
+    overflow: auto;
+}
+.allImagesWrapper{
+    display: block;
+    width: 86%;
+    margin: auto;
+    height: 100%;
+    padding: 15px;
+}
+
+.display-none{
+    display: none;
+}
+.profileImgContainer{
+    height: 140px;
+    width: 140px;
+    border-radius: 3px;
+    border: 4px solid rgba(102,102,102,0.1);
+    float: left;
+    margin: 10px;
+}
+.profileImgContainer img{
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+}
+
+@media only screen and (max-width: 992px) {
+    #leftSection{
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+    #leftSection ul{
+        text-align: center;
+    }
+    #leftSection ul li{
+        display: inline-block;
+        list-style-type: circle;
+    }
+    #centerContent{
+        width: 80%;
+        height: Calc(100vh - 150px);
+    }
+    #rightSection{
+        height: Calc(100vh - 150px);
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    #rightSection{
+        width: 80px;
+    }
+    #centerContent{
+        width: Calc(100% - 80px);
+    }
+    #rightSection .imgName{
+        display: none;
+    }
+}
+
+
